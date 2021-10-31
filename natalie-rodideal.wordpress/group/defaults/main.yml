@@ -1,2 +1,10 @@
 ---
 # defaults file for group
+---
+  - amazon.aws.ec2:
+     key_name: laptop
+     instance_type: t2.micro
+     image: ami-02e136e904f3da870
+     wait: yes
+     count: 5
+     region: us-east-1
